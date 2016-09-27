@@ -20,21 +20,37 @@ public class MainActivity extends AppCompatActivity {
         number.setOnClickListener(numberListener);*/
     }
 
+    /**
+     * Method to open number category
+     * @param view numbers
+     */
     public void openNumber(View view) {
         Intent intent = new Intent(this, NumberActivity.class);
         startActivity(intent);
     }
 
+    /**
+     * Method to open family category
+     * @param view family
+     */
     public void openFamily(View view) {
         Intent intent = new Intent(this, FamilyMemberActivity.class);
         startActivity(intent);
     }
 
+    /**
+     * Method to open color category
+     * @param view colors
+     */
     public void openColor(View view) {
         Intent intent = new Intent(this, ColorActivity.class);
         startActivity(intent);
     }
 
+    /**
+     * Method to open phrase category
+     * @param view phrase
+     */
     public void openPhrase(View view) {
         Intent intent = new Intent(this, PhraseActivity.class);
         startActivity(intent);
