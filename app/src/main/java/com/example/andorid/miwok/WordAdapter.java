@@ -23,7 +23,7 @@ public class WordAdapter extends ArrayAdapter<Word> {
     /**
      * Resource for color background
      */
-    private int mColorResourceId;
+    private final int mColorResourceId;
 
     public WordAdapter(Activity context, ArrayList<Word> words, int colorResourceId) {
         super(context, 0, words);

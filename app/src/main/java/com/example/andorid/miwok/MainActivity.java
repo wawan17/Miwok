@@ -1,11 +1,9 @@
 package com.example.andorid.miwok;
 
-import android.content.Intent;
+import android.support.design.widget.TabLayout;
+import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.view.View;
-//import android.widget.TextView;
-//import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -14,45 +12,17 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        /*WordClickListener numberListener = new WordClickListener();
+        // Find the view pager that allow user to swipe between fragments
+        ViewPager viewPager = (ViewPager) findViewById(R.id.viewpager);
 
-        TextView number = (TextView) findViewById(R.id.menu_number);
-        number.setOnClickListener(numberListener);*/
-    }
+        // Create CategoryAdapter that knows which should be shown on each page
+        CategoryAdapter adapter = new CategoryAdapter(this, getSupportFragmentManager());
 
-    /**
-     * Method to open number category
-     * @param view numbers
-     */
-    public void openNumber(View view) {
-        Intent intent = new Intent(this, NumberActivity.class);
-        startActivity(intent);
-    }
+        // Set adapter on view pager
+        viewPager.setAdapter(adapter);
 
-    /**
-     * Method to open family category
-     * @param view family
-     */
-    public void openFamily(View view) {
-        Intent intent = new Intent(this, FamilyMemberActivity.class);
-        startActivity(intent);
-    }
-
-    /**
-     * Method to open color category
-     * @param view colors
-     */
-    public void openColor(View view) {
-        Intent intent = new Intent(this, ColorActivity.class);
-        startActivity(intent);
-    }
-
-    /**
-     * Method to open phrase category
-     * @param view phrase
-     */
-    public void openPhrase(View view) {
-        Intent intent = new Intent(this, PhraseActivity.class);
-        startActivity(intent);
+        // Give the TabLayout the ViewPager
+        TabLayout tabLayout = (TabLayout) findViewById(R.id.tabs);
+        tabLayout.setupWithViewPager(viewPager);
     }
 }

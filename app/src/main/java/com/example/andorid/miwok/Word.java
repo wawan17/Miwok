@@ -5,7 +5,7 @@ public class Word {
     private static final int NO_IMAGE_PROVIDED = -1;
 
     // Declare variables
-    private String mDefaultTranslation, mMiwokTranslation;
+    private final String mDefaultTranslation, mMiwokTranslation;
     private int mImageResourceId = NO_IMAGE_PROVIDED;
     private int mAudioResourceId;
 

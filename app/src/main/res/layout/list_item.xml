@@ -9,6 +9,7 @@
     android:orientation="horizontal">
 
     <ImageView
+        android:contentDescription="@string/icon_word"
         android:id="@+id/miwok_image"
         android:layout_width="@dimen/list_item_height"
         android:layout_height="@dimen/list_item_height"
@@ -50,7 +51,7 @@
     </LinearLayout>
 
     <ImageView
-        android:id="@+id/play_icon"
+        android:contentDescription="@string/icon_play"
         android:layout_width="24dp"
         android:layout_height="24dp"
         android:layout_alignParentEnd="true"

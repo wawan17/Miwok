@@ -1,67 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/tan_background"
+    android:orientation="vertical"
     tools:context="com.example.andorid.miwok.MainActivity">
 
-    <LinearLayout
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tabs"
+        style="@style/CategoryTab"
+        android:background="@color/colorPrimary"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:layout_height="wrap_content" />
 
-        <!-- Numbers category -->
-        <FrameLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@color/category_number">
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
 
-            <TextView
-                android:id="@+id/numbers"
-                style="@style/menu"
-                android:onClick="openNumber"
-                android:text="@string/menu_numbers" />
-        </FrameLayout>
-
-        <!-- Family category -->
-        <FrameLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@color/category_family">
-
-            <TextView
-                android:id="@+id/family"
-                style="@style/menu"
-                android:onClick="openFamily"
-                android:text="@string/menu_family_members" />
-        </FrameLayout>
-
-        <!-- Colors category -->
-        <FrameLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@color/category_color">
-
-            <TextView
-                android:id="@+id/colors"
-                style="@style/menu"
-                android:onClick="openColor"
-                android:text="@string/menu_colors" />
-        </FrameLayout>
-
-        <!-- Phrases category -->
-        <FrameLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@color/category_phrase"
-            android:onClick="openPhrase">
-
-            <TextView
-                android:id="@+id/phrases"
-                style="@style/menu"
-                android:text="@string/menu_phrases" />
-        </FrameLayout>
-    </LinearLayout>
-</ScrollView>
+</LinearLayout>
 

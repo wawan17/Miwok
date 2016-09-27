@@ -1,7 +1,9 @@
 <resources>
     <string name="app_name">Miwok</string>
-    <string name="menu_numbers">Numbers</string>
-    <string name="menu_family_members">Family Members</string>
-    <string name="menu_colors">Colors</string>
-    <string name="menu_phrases">Phrases</string>
+    <string name="menu_numbers">Number</string>
+    <string name="menu_family_members">Family</string>
+    <string name="menu_colors">Color</string>
+    <string name="menu_phrases">Phrase</string>
+    <string name="icon_word">icon words</string>
+    <string name="icon_play">icon play</string>
 </resources>
