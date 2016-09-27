@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Miwok</string>
+    <string name="menu_colors">Warna</string>
+    <string name="menu_family_members">Anggota Keluarga</string>
+    <string name="menu_numbers">Nomor</string>
+    <string name="menu_phrases">Frasa</string>
+</resources>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#795548</color>
+    <color name="colorPrimaryDark">#5D4037</color>
+    <color name="colorAccent">#00BCD4</color>
+    
+    <!-- Background color for App -->
+    <color name="tan_background">#FFF7DA</color>
+    
+    <!-- Background category number -->
+    <color name="category_number">#FD8E09</color>
+
+    <!-- Background category family -->
+    <color name="category_family">#379237</color>
+
+    <!-- Background category color -->
+    <color name="category_color">#8800A0</color>
+
+    <!-- Background category phrase -->
+    <color name="category_phrase">#16AFCA</color>
+</resources>
